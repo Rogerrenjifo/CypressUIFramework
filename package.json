@@ -1,0 +1,20 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "This projet build an ui automated test cases implemented in cypress.",
+  "main": "index.js",
+  "scripts": {
+    "clean":"rimraf ./allure-report && rimraf ./allure-results",
+    "test": "npx cypress run --headed --env allure=true",
+    "report": "allure generate allure-results -o allure-report --clean",
+    "open": "export GTK_PATH= && allure open",
+    "all": "npm run clean && npm run test && npm run report && npm run open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "cypress": "^12.14.0"
+  }
+}
