@@ -1,17 +1,17 @@
-import { LoginElements } from "./login.elements";
+import { SignUpElements } from "./signup.elements";
 
 
 export class LoginMethods{
   static insertUserName(username){
-    LoginElements.textboxes.username.invoke('val', username)
+    SignUpElements.textboxes.username.invoke('val', username)
   }
 
   static insertPassword(password){
-    LoginElements.textboxes.password.invoke('val', password)
+    SignUpElements.textboxes.password.invoke('val', password)
   }
 
   static clickOnLoginButton(){
-    LoginElements.buttons.login.click()
+    SignUpElements.buttons.login.click()
   }
 
   static login(username, password){
