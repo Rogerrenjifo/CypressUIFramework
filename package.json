@@ -7,7 +7,7 @@
     "clean":"rimraf ./allure-report && rimraf ./allure-results",
     "test": "npx cypress run --headed --env allure=true",
     "report": "allure generate allure-results -o allure-report --clean",
-    "open": "export GTK_PATH= && allure open",
+    "open": "allure open",
     "all": "npm run clean && npm run test && npm run report && npm run open"
   },
   "keywords": [],
