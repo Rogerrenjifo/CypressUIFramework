@@ -1,13 +1,14 @@
 import { CommonPageData } from "../pages/common-page/common-page.data";
 import { CommonPageMEthods } from "../pages/common-page/common-page.methods";
+import { LoginData } from "../pages/login/login.data";
 import { SignUpMethods } from "../pages/signup/signup.methods";
 import { Logger } from "../support/logger";
 
 const user = CommonPageMEthods.generateRandomString();
 const password = CommonPageMEthods.generateRandomString(5);
-const existingUser = "random01";
+const existingUser = LoginData.validCredentials.username;
 
-describe(CommonPageData.testSuites.register, () => {
+describe(CommonPageData.testSuites.authentication, () => {
   it("Registration of a valid user", () => {
     Logger.stepNumber(1);
     Logger.step("Navigate to the homepage.");
