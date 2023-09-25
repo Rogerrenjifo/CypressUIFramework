@@ -1,9 +1,10 @@
+import { Logger } from "../../support/logger";
 import { CommonPageData } from "./common-page.data";
 import { CommonPageElements } from "./common-page.elements";
 
 export class CommonPageMEthods {
   static navigateToDemoBlaze() {
-    // cy.clearCookies();
+    cy.clearCookies();
     cy.visit(CommonPageData.url);
   }
 
@@ -32,8 +33,8 @@ export class CommonPageMEthods {
   }
 
   static verifyAlert(expectedMessage) {
-    cy.on("window:alert", (str) => {
-      expect(str).to.equal(expectedMessage);
+    cy.on("window:alert", (message) => {
+      expect(message).to.equal(expectedMessage);
     });
   }
   static generateRandomString(length = 10) {

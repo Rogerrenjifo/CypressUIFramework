@@ -19,7 +19,12 @@ export class SignUpMethods {
     this.insertPassword(password);
     this.clickOnLoginButton();
   }
+
   static verifySignupSuccesfulMessageIsDisplayed() {
     CommonPageMEthods.verifyAlert("Sign up successful.");
+  }
+
+  static verifyThatThisUserAlreadyExistMessageIsDisplayed() {
+    CommonPageMEthods.verifyAlert("This user already exist.");
   }
 }
