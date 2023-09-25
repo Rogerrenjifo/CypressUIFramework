@@ -11,10 +11,12 @@ export class Logger {
   }
   static verification(description) {
     const text = `Verification - ${description}`;
+    cy.log(text);
     cy.allure().step(text);
   }
   static subStep(description) {
     const text = `Sub Step - ${description}`;
+    cy.log(text);
     cy.allure().step(text);
   }
 }

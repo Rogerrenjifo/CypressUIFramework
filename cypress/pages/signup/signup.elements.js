@@ -1,22 +1,22 @@
 export class SignUpElements {
-  static get textboxes(){
+  static get textboxes() {
     return {
       get username() {
-        return cy.get("#sign-username")
+        return cy.get("#sign-username");
       },
       get password() {
-        return cy.get("#sign-password")
-      }
-    }
+        return cy.get("#sign-password");
+      },
+    };
   }
   static get buttons() {
     return {
       get close() {
-          return cy.contains("button", "Close")
+        return cy.contains("button", "Close");
       },
-      get login() {
-        return cy.contains("button", "Log in")
-      }
-    }
+      get signup() {
+        return cy.contains("button", "Sign up");
+      },
+    };
   }
 }

@@ -8,7 +8,7 @@
     "test": "npx cypress run --headed --env allure=true",
     "report": "allure generate allure-results -o allure-report --clean",
     "open": "allure open",
-    "all": "npm run clean && npm run test && npm run report && npm run open"
+    "all": "npm run clean && npm run test & npm run report && npm run open"
   },
   "keywords": [],
   "author": "",
