@@ -15,5 +15,6 @@ phases:
       - npm run ci
   post_build:
     commands:
-       - aws s3 sync allure-report s3://testreportbucketrrenjifo/
-       - aws s3 cp --acl public-read s3://testreportbucketrrenjifo/ s3://testreportbucketrrenjifo/ --recursive --metadata-directive REPLACE
+      - aws s3 sync allure-report s3://testreportbucketrrenjifo/
+      - aws s3 cp --recursive --acl public-read s3://testreportbucketrrenjifo/ s3://testreportbucketrrenjifo/ --metadata-directive REPLACE
+      - echo "The HTML report can be found here <http://testreportbucketrrenjifo.s3-website-us-east-1.amazonaws.com>"
