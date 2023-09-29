@@ -12,4 +12,7 @@ phases:
       - npm install -g allure-commandline
   build:
     commands:
-      - npm run all
+      - npm run ci
+  post_build:
+       - aws s3 sync allure-report s3://testreportbucketrrenjifo/
+       - aws s3 cp --acl public-read s3://testreportbucketrrenjifo/ s3://testreportbucketrrenjifo/ --recursive --metadata-directive REPLACE
