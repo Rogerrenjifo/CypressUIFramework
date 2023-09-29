@@ -1,6 +1,7 @@
 # cypress
 This projet build an ui automated test cases implemented in cypress.
-![Alt text](image.png)
+
+![Alt text](image.gitpng)
 
 # Install node js 
 sudo apt updatenode
@@ -25,5 +26,15 @@ https://github.com/cypress-io/cypress/issues/27113
 
  # run script 
  npm run all
- if all run well the view should be visible at <http://127.0.1.1:45327/>
- ![Alt text](image.png)
+
+
+
+# Urls
+## Cypress documentation
+> https://docs.cypress.io/guides/overview/why-cypress
+## Cypress bootcamp course
+> https://www.udemy.com/course/bootcamp-cypress-como-crear-un-framework-desde-cero/
+## Page under test 
+> https://www.demoblaze.com/
+## Report url
+> https://testreportbucketrrenjifo.s3.amazonaws.com/index.html

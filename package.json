@@ -7,10 +7,9 @@
     "clean":"rimraf ./allure-report && rimraf ./allure-results",
     "test": "npx cypress run --env allure=true",
     "report": "allure generate allure-results -o allure-report --clean",
-    "report-ci": "allure generate allure-results --clean --output allure-report --base-url http://testreportbucketrrenjifo.s3-website-us-east-1.amazonaws.com/",
     "open": "allure open",
     "all": "npm run clean && npm run test & npm run report && npm run open",
-    "ci": "npm run clean && npm run test & npm run report-ci"
+    "ci": "npm run clean && npm run test & npm run report"
   },
   "keywords": [],
   "author": "",
