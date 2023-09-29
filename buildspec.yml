@@ -8,7 +8,7 @@ phases:
   pre_build:
     commands:
       - npm install
-
+      - npm install -g allure-commandline
   build:
     commands:
       - npm run all
