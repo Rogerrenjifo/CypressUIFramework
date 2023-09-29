@@ -1,5 +1,6 @@
 # cypress
 This projet build an ui automated test cases implemented in cypress.
+![Alt text](image.png)
 
 # Install node js 
 sudo apt updatenode
